@@ -1,0 +1,21 @@
+{
+  "name": "browser-wu",
+  "version": "1.0.0",
+  "homepage": "https://github.com/yisbug/browser-wu",
+  "authors": [
+    "ying <yisbug@qq.com>"
+  ],
+  "description": "for ie",
+  "main": "browser.js",
+  "keywords": [
+    "browser"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

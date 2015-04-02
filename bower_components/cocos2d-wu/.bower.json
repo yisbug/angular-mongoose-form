@@ -1,0 +1,25 @@
+{
+  "name": "cocos2d-wu",
+  "authors": [
+    "ying <yisbug@qq.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/yisbug/cocos2d-wu",
+  "_release": "5bde3b761d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5bde3b761d5928f2140651e6702ead190ba160c6"
+  },
+  "_source": "git://github.com/yisbug/cocos2d-wu.git",
+  "_target": "*",
+  "_originalSource": "cocos2d-wu",
+  "_direct": true
+}
