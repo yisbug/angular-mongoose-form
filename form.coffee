@@ -1,6 +1,6 @@
 # 根据schema和data，自动生成表单
 
-angular.module 'angular.mongoose.form'
+angular.module 'angular.mongoose.form',[]
 .run ['$templateCache',($templateCache)->
     $templateCache.put 'template/form.add.html','''
     <div class="modal-header">
