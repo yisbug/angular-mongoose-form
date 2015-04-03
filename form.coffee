@@ -84,10 +84,10 @@ angular.module 'angular.mongoose.form',[]
     defaultData = angular.extend {},data
     addWatch = (field,result,o)->
         $scope.$watch 'data',(value)->
-            if value[field] is result
-                o.if = true
-            else
-                o.if = false
+            if typeof result is 'string'
+                o.if = if value[field] is result then true else false
+            else if typeof result is 'function'
+                o.if = result value[field]
         ,true
     # 每一行，最终初始数据，模型，初始数据
     formatSchema = (rows,data,schema,defaultData={})->

@@ -53,10 +53,10 @@ angular.module('angular.mongoose.form', []).run([
   defaultData = angular.extend({}, data);
   addWatch = function(field, result, o) {
     return $scope.$watch('data', function(value) {
-      if (value[field] === result) {
-        return o["if"] = true;
-      } else {
-        return o["if"] = false;
+      if (typeof result === 'string') {
+        return o["if"] = value[field] === result ? true : false;
+      } else if (typeof result === 'function') {
+        return o["if"] = result(value[field]);
       }
     }, true);
   };

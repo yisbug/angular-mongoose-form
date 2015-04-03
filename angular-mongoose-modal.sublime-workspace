@@ -513,8 +513,8 @@
 	],
 	"file_history":
 	[
-		"/D/project/angular-mongoose-modal/bower.json",
 		"/D/project/angular-mongoose-modal/form.coffee",
+		"/D/project/angular-mongoose-modal/bower.json",
 		"/D/project/angular-mongoose-modal/.gitignore",
 		"/D/project/angular-wu/test/test.html",
 		"/D/project/angular-wu/README.md",
@@ -849,7 +849,7 @@
 				{
 					"buffer": 1,
 					"file": "bower.json",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 701,
@@ -859,8 +859,8 @@
 						"selection":
 						[
 							[
-								279,
-								279
+								330,
+								330
 							]
 						],
 						"settings":
