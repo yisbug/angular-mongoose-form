@@ -133,14 +133,15 @@ angular.module 'angular.mongoose.form',[]
     $scope.ok = ->
         data = formatData(schema,$scope.data)
         return $modalInstance.close data if not $scope.vali
-        if $scope.vali.length is 1
-            isSuccess = $scope.vali data
-            return $msgbox isSuccess if isSuccess
-            $modalInstance.close data
         if $scope.vali.length is 2
             $scope.vali data,(err)->
                 return $msgbox err if err
                 $modalInstance.close data
+                return
+        isSuccess = $scope.vali data
+        return $msgbox isSuccess if isSuccess
+        $modalInstance.close data
+        
 
     $scope.cancel = ->
         $modalInstance.dismiss 'cancel'

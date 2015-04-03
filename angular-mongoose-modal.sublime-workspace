@@ -326,14 +326,30 @@
 				"buffer_size": 76,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "bower.json",
+			"settings":
+			{
+				"buffer_size": 701,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 173.0,
 		"selected_items":
 		[
+			[
+				"compi",
+				"Coffee: Compile File"
+			],
+			[
+				"coffee",
+				"Coffee: Compile File"
+			],
 			[
 				"del",
 				"File: Delete"
@@ -497,6 +513,9 @@
 	],
 	"file_history":
 	[
+		"/D/project/angular-mongoose-modal/bower.json",
+		"/D/project/angular-mongoose-modal/form.coffee",
+		"/D/project/angular-mongoose-modal/.gitignore",
 		"/D/project/angular-wu/test/test.html",
 		"/D/project/angular-wu/README.md",
 		"/D/project/angular-wu/bower_components/angular-loading-bar/bower.json",
@@ -621,10 +640,7 @@
 		"/D/project/xxsys/client/service/project.coffee",
 		"/D/project/xxsys/test/project.coffee",
 		"/D/project/projecttool/client/modules/projects/projects.coffee",
-		"/D/project/xxsys/test/caimanapi.coffee",
-		"/D/project/xxsys/client/lib/utils.coffee",
-		"/c/users/y/appdata/local/temp/utils.js",
-		"/D/project/projecttool/client/modules/projects/projects.html"
+		"/D/project/xxsys/test/caimanapi.coffee"
 	],
 	"find":
 	{
@@ -793,7 +809,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -818,9 +834,44 @@
 							"incomplete_sync": null,
 							"is_xml": false,
 							"open_with_edit": true,
+							"origin_encoding": "UTF-8",
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "bower.json",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								279,
+								279
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

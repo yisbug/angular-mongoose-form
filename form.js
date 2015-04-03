@@ -123,21 +123,19 @@ angular.module('angular.mongoose.form', []).run([
     if (!$scope.vali) {
       return $modalInstance.close(data);
     }
-    if ($scope.vali.length === 1) {
-      isSuccess = $scope.vali(data);
-      if (isSuccess) {
-        return $msgbox(isSuccess);
-      }
-      $modalInstance.close(data);
-    }
     if ($scope.vali.length === 2) {
-      return $scope.vali(data, function(err) {
+      $scope.vali(data, function(err) {
         if (err) {
           return $msgbox(err);
         }
-        return $modalInstance.close(data);
+        $modalInstance.close(data);
       });
     }
+    isSuccess = $scope.vali(data);
+    if (isSuccess) {
+      return $msgbox(isSuccess);
+    }
+    return $modalInstance.close(data);
   };
   $scope.cancel = function() {
     return $modalInstance.dismiss('cancel');
